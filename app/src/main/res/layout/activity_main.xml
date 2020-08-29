@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simple GitHub repositorie by 0rbianta"
+            android:background="#000"
+            android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:fontFamily="casual"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Wi-Fi fun Activity!" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:text="Passive"
+                        android:textColor="#000000"
+                        android:textSize="30dp"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/custom_button"
+                        android:fontFamily="sans-serif"
+                        android:onClick="btnEnableClick"
+                        android:text="   Enable Wi-Fi   "
+                        android:textColor="@color/custombuttontext"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/custom_button"
+                        android:fontFamily="sans-serif"
+                        android:onClick="btnDisableClick"
+                        android:text="   Disable Wi-Fi   "
+                        android:textColor="@color/custombuttontext"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:text="Aggressive"
+                        android:textColor="#000000"
+                        android:textSize="30dp"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/custom_button"
+                        android:fontFamily="sans-serif"
+                        android:onClick="btnForceEnableClick"
+                        android:text="   Force Enable Wi-Fi   "
+                        android:textColor="@color/custombuttontext"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/custom_button"
+                        android:fontFamily="sans-serif"
+                        android:onClick="btnForceDisableClick"
+                        android:text="  Force Disable Wi-Fi   "
+                        android:textColor="@color/custombuttontext"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/custom_button"
+                        android:fontFamily="sans-serif"
+                        android:onClick="btnForceStopClick"
+                        android:text="  Stop force activity   "
+                        android:textColor="@color/custombuttontext"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
